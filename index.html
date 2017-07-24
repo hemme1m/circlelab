@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Beautiful Circle Maker</title>
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id="pageHeader">THIS IS A HEADER</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="circleDiv">
+                        <canvas id="circleCanvas"></canvas>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="radiusSize">Set Radius (from 1 to 70 pixels):</label><br />
+                    <input type="number" id="radiusSize" min="1" max="70" value="1" /><p></p>
+                    <button class="btn btn-default" id="circleMaker">Make My Circle Grow</button>
+                    <!--user sets circle parameters-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 id="circleOutputInfo"></h4>
+                </div>
+                <div class="col-md-6">
+                    <div id="catPics"><img src="puppy.jpg" /></div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
